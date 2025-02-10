@@ -1,194 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>n8ventures</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+		<link rel="stylesheet" href="index.css" />
+		<link
+			rel="icon"
+			href="https://avatars.githubusercontent.com/u/25238367?v=4"
+			type="image/png"
+		/>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>n8ventures</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
-  <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/25238367?v=4" type="image/png">
-</head>
-
-<body>
-  <div id="loading">
-    <div id="spinner"></div>
-  </div>
-  <div id="profile">
-    <div id="profile_img" style="background: url(https://avatars.githubusercontent.com/u/25238367?v=4) center;"></div>
-    <div id="username"><span style="display:block;">John Nathaniel Calvara</span><a
-        href="https://github.com/n8ventures">@n8ventures</a></div>
-    <div id="userbio" style="display: none;">undefined</div>
-    <div id="about">
-      <span style="display:block;"><i class="fas fa-users"></i> &nbsp; @BlindspotProd </span>
-      <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
-      <span style="display:none;"><i class="fas fa-link"></i> &nbsp; <a href=""></a></span>
-      <span style="display:none;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; null</span>
-      <span style="display:none;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
-      <div class="socials">
-        <span style="display:none !important;"><a href="https://www.twitter.com/undefined" target="_blank"
-            class="socials"><i class="fab fa-twitter"></i></a></span>
-        <span style="display:none !important;"><a href="https://www.dribbble.com/undefined" target="_blank"
-            class="socials"><i class="fab fa-dribbble"></i></a></span>
-        <span style="display:none !important;"><a href="https://www.linkedin.com/in/undefined/" target="_blank"
-            class="socials"><i class="fab fa-linkedin-in"></i></a></span>
-        <span style="display:none !important;"><a href="https://www.medium.com/@undefined/" target="_blank"
-            class="socials"><i class="fab fa-medium-m"></i></a></span>
-      </div>
-    </div>
-  </div>
-  <div id="display">
-    <div id="work">
-      <h1>Work.</h1>
-      <div class="projects" id="work_section">
-        <a href="https://github.com/n8ventures/Apex-Match-API-for-Discord.js" target="_blank">
-          <section>
-            <div class="section_title">Apex-Match-API-for-Discord.js</div>
-            <div class="about_section">
-              <span style="display:none;">undefined</span>
-            </div>
-            <div class="bottom_section">
-              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
-              <span><i class="fas fa-star"></i>&nbsp; 1</span>
-              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-            </div>
-          </section>
-        </a>
-        <a href="https://github.com/n8ventures/blindspot-prod-discordbot.js" target="_blank">
-          <section>
-            <div class="section_title">blindspot-prod-discordbot.js</div>
-            <div class="about_section">
-              <span style="display:block;">Read ApexAPI via Discord</span>
-            </div>
-            <div class="bottom_section">
-              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
-              <span><i class="fas fa-star"></i>&nbsp; 0</span>
-              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-            </div>
-          </section>
-        </a>
-        <a href="https://github.com/n8ventures/video-to-gifski" target="_blank">
-          <section>
-            <div class="section_title">v2g-con-personal</div>
-            <div class="about_section">
-              <span style="display:block;">Convert Video To GIF with FFmpeg and Gifski</span>
-            </div>
-            <div class="bottom_section">
-              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
-              <span><i class="fas fa-star"></i>&nbsp; 0</span>
-              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-            </div>
-          </section>
-        </a>
-      </div>
-    </div>
-    <div id="forks" style="display: block;">
-      <h1>Forks.</h1>
-      <div class="projects" id="forks_section">
-        <a href="https://github.com/n8ventures/wii-shop-extension" target="_blank">
-          <section>
-            <div class="section_title">wii-shop-extension</div>
-            <div class="about_section">
-              <span style="display:block;">Browser extension that plays the Wii Shop theme when you visit shopping
-                websites.</span>
-            </div>
-            <div class="bottom_section">
-              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
-              <span><i class="fas fa-star"></i>&nbsp; 0</span>
-              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-            </div>
-          </section>
-        </a>
-        <a href="https://github.com/n8ventures/adobe-font-grabber" target="_blank">
-          <section>
-            <div class="section_title">adobe-font-grabber</div>
-            <div class="about_section">
-              <span style="display:block;">Command line tool to copy font installed via Adobe CC to a folder of your
-                choice</span>
-            </div>
-            <div class="bottom_section">
-              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Rust</span>
-              <span><i class="fas fa-star"></i>&nbsp; 0</span>
-              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-            </div>
-          </section>
-        </a>
-        <a href="https://github.com/n8ventures/DRP_Creative" target="_blank">
-          <section>
-            <div class="section_title">DRP_Creative</div>
-            <div class="about_section">
-              <span style="display:block;">Show your friends what you're working on, be it in Adobe Suite, Autodesk
-                Suite, Cinema 4D or many more! Currently supported: C4D, Adobe Suite, Davinci Resolve, Maya, 3Ds Max,
-                Sony Vegas, Substance suite, Isotropix suite, FL, Ableton, Blender, Cavalry,</span>
-            </div>
-            <div class="bottom_section">
-              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Rust</span>
-              <span><i class="fas fa-star"></i>&nbsp; 0</span>
-              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-            </div>
-          </section>
-        </a>
-        <a href="https://github.com/n8ventures/Live-Valorant-Overlay" target="_blank">
-          <section>
-            <div class="section_title">Live-Valorant-Overlay</div>
-            <div class="about_section">
-              <span style="display:block;">An Overlay proof-of-concept Application for Valorant giving information in
-                real-time about current match, spike and player status(dead/alive, weapons, ultimate points, shields
-                etc.)</span>
-            </div>
-            <div class="bottom_section">
-              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
-              <span><i class="fas fa-star"></i>&nbsp; 3</span>
-              <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
-            </div>
-          </section>
-        </a>
-        <a href="https://github.com/n8ventures/TilingZoeDepth_GUI" target="_blank">
-          <section>
-            <div class="section_title">TilingZoeDepth_GUI</div>
-            <div class="about_section">
-              <span style="display:block;">Local GUI version of BillFSmith's Tiling ZoeDepth</span>
-            </div>
-            <div class="bottom_section">
-              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
-              <span><i class="fas fa-star"></i>&nbsp; 0</span>
-              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-            </div>
-          </section>
-        </a></div>
-    </div>
-    <div id="blog_section">
-      <h1>Blog.</h1>
-      <div id="blogs"></div>
-    </div>
-    <div id="footer">
-      <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
-    </div>
-  </div>
-  <script type="text/javascript">
-    setTimeout(function() {
-      document.getElementById("loading").classList.add("animated");
-      document.getElementById("loading").classList.add("fadeOut");
-      setTimeout(function() {
-        document.getElementById("loading").classList.remove("animated");
-        document.getElementById("loading").classList.remove("fadeOut");
-        document.getElementById("loading").style.display = "none";
-      }, 800);
-    }, 1500);
-    $.getJSON("blog.json", function(blog) {
-      blog = blog || [];
-      if (blog.length == 0) {
-        return (document.getElementById("blog_section").style.display =
-          "none");
-      }
-      for (var i = 0; i < blog.length; i++) {
-        $("#blogs").append(`
+	<body>
+		<div id="loading">
+			<div id="spinner"></div>
+		</div>
+		<div id="profile">
+			<div
+				id="profile_img"
+				style="
+					background: url(https://avatars.githubusercontent.com/u/25238367?v=4)
+						center;
+				"
+			></div>
+			<div id="username">
+				<span style="display: block">John Nathaniel Calvara</span
+				><a href="https://github.com/n8ventures">@n8ventures</a>
+			</div>
+			<div id="userbio" style="display: block">
+				My bathroom tiles have more github contributions than me
+			</div>
+			<div id="about">
+				<span style="display: none"
+					><i class="fas fa-users"></i> &nbsp; null</span
+				>
+				<span style="display: none"
+					><i class="fas fa-envelope"></i> &nbsp; null</span
+				>
+				<span style="display: none"
+					><i class="fas fa-link"></i> &nbsp; <a href=""></a
+				></span>
+				<span style="display: none"
+					><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; null</span
+				>
+				<span style="display: none"
+					><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span
+				>
+				<div class="socials">
+					<span style="display: block"
+						><a
+							href="https://www.twitter.com/n8ventures_"
+							target="_blank"
+							class="socials"
+							><i class="fab fa-twitter"></i></a
+					></span>
+					<span style="display: block"
+						><a
+							href="https://www.linkedin.com/in/n8ventures/"
+							target="_blank"
+							class="socials"
+							><i class="fab fa-linkedin-in"></i></a
+					></span>
+				</div>
+			</div>
+		</div>
+		<div id="display">
+			<div id="work">
+				<h1>Work.</h1>
+				<div class="projects" id="work_section">
+					<a
+						href="https://github.com/n8ventures/Apex-Match-API-for-Discord.js"
+						target="_blank"
+					>
+						<section>
+							<div class="section_title">Apex-Match-API-for-Discord.js</div>
+							<div class="about_section">
+								<span style="display: none">undefined</span>
+							</div>
+							<div class="bottom_section">
+								<span style="display: inline-block"
+									><i class="fas fa-code"></i>&nbsp; JavaScript</span
+								>
+								<span><i class="fas fa-star"></i>&nbsp; 1</span>
+								<span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+							</div>
+						</section>
+					</a>
+					<a
+						href="https://github.com/n8ventures/video-to-gifski"
+						target="_blank"
+					>
+						<section>
+							<div class="section_title">video-to-gifski</div>
+							<div class="about_section">
+								<span style="display: block"
+									>Convert Video To GIF with FFmpeg and Gifski</span
+								>
+							</div>
+							<div class="bottom_section">
+								<span style="display: inline-block"
+									><i class="fas fa-code"></i>&nbsp; Python</span
+								>
+								<span><i class="fas fa-star"></i>&nbsp; 1</span>
+								<span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+							</div>
+						</section>
+					</a>
+					<a
+						href="https://github.com/n8ventures/blindspot-prod-discordbot.js"
+						target="_blank"
+					>
+						<section>
+							<div class="section_title">blindspot-prod-discordbot.js</div>
+							<div class="about_section">
+								<span style="display: block">Read ApexAPI via Discord</span>
+							</div>
+							<div class="bottom_section">
+								<span style="display: inline-block"
+									><i class="fas fa-code"></i>&nbsp; JavaScript</span
+								>
+								<span><i class="fas fa-star"></i>&nbsp; 0</span>
+								<span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+							</div>
+						</section>
+					</a>
+					<a href="https://github.com/n8ventures/n8ventures" target="_blank">
+						<section>
+							<div class="section_title">n8ventures</div>
+							<div class="about_section">
+								<span style="display: none">undefined</span>
+							</div>
+							<div class="bottom_section">
+								<span style="display: none"
+									><i class="fas fa-code"></i>&nbsp; null</span
+								>
+								<span><i class="fas fa-star"></i>&nbsp; 0</span>
+								<span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+							</div>
+						</section>
+					</a>
+					<a
+						href="https://github.com/n8ventures/n8ventures.github.io"
+						target="_blank"
+					>
+						<section>
+							<div class="section_title">n8ventures.github.io</div>
+							<div class="about_section">
+								<span style="display: none">undefined</span>
+							</div>
+							<div class="bottom_section">
+								<span style="display: inline-block"
+									><i class="fas fa-code"></i>&nbsp; HTML</span
+								>
+								<span><i class="fas fa-star"></i>&nbsp; 0</span>
+								<span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+							</div>
+						</section>
+					</a>
+					<a
+						href="https://github.com/n8ventures/video-to-AVI-MacOS"
+						target="_blank"
+					>
+						<section>
+							<div class="section_title">video-to-AVI-MacOS</div>
+							<div class="about_section">
+								<span style="display: block"
+									>Video To AVI GUI for MacOS using ffmpeg</span
+								>
+							</div>
+							<div class="bottom_section">
+								<span style="display: inline-block"
+									><i class="fas fa-code"></i>&nbsp; Python</span
+								>
+								<span><i class="fas fa-star"></i>&nbsp; 0</span>
+								<span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+							</div>
+						</section>
+					</a>
+				</div>
+			</div>
+			<div id="forks" style="display: block">
+				<h1>Forks.</h1>
+				<div class="projects" id="forks_section">
+					<a
+						href="https://github.com/n8ventures/TilingZoeDepth_GUI"
+						target="_blank"
+					>
+						<section>
+							<div class="section_title">TilingZoeDepth_GUI</div>
+							<div class="about_section">
+								<span style="display: block"
+									>Local GUI version of BillFSmith's Tiling ZoeDepth</span
+								>
+							</div>
+							<div class="bottom_section">
+								<span style="display: inline-block"
+									><i class="fas fa-code"></i>&nbsp; Python</span
+								>
+								<span><i class="fas fa-star"></i>&nbsp; 4</span>
+								<span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+							</div>
+						</section>
+					</a>
+					<a
+						href="https://github.com/n8ventures/Live-Valorant-Overlay"
+						target="_blank"
+					>
+						<section>
+							<div class="section_title">Live-Valorant-Overlay</div>
+							<div class="about_section">
+								<span style="display: block"
+									>An Overlay proof-of-concept Application for Valorant giving
+									information in real-time about current match, spike and player
+									status(dead/alive, weapons, ultimate points, shields
+									etc.)</span
+								>
+							</div>
+							<div class="bottom_section">
+								<span style="display: inline-block"
+									><i class="fas fa-code"></i>&nbsp; Python</span
+								>
+								<span><i class="fas fa-star"></i>&nbsp; 3</span>
+								<span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+							</div>
+						</section>
+					</a>
+					<a
+						href="https://github.com/n8ventures/adobe-font-grabber"
+						target="_blank"
+					>
+						<section>
+							<div class="section_title">adobe-font-grabber</div>
+							<div class="about_section">
+								<span style="display: block"
+									>Command line tool to copy font installed via Adobe CC to a
+									folder of your choice</span
+								>
+							</div>
+							<div class="bottom_section">
+								<span style="display: inline-block"
+									><i class="fas fa-code"></i>&nbsp; Rust</span
+								>
+								<span><i class="fas fa-star"></i>&nbsp; 0</span>
+								<span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+							</div>
+						</section>
+					</a>
+					<a href="https://github.com/n8ventures/DRP_Creative" target="_blank">
+						<section>
+							<div class="section_title">DRP_Creative</div>
+							<div class="about_section">
+								<span style="display: block"
+									>Show your friends what you're working on, be it in Adobe
+									Suite, Autodesk Suite, Cinema 4D or many more! Currently
+									supported: C4D, Adobe Suite, Davinci Resolve, Maya, 3Ds Max,
+									Sony Vegas, Substance suite, Isotropix suite, FL, Ableton,
+									Blender, Cavalry,</span
+								>
+							</div>
+							<div class="bottom_section">
+								<span style="display: inline-block"
+									><i class="fas fa-code"></i>&nbsp; Rust</span
+								>
+								<span><i class="fas fa-star"></i>&nbsp; 0</span>
+								<span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+							</div>
+						</section>
+					</a>
+					<a
+						href="https://github.com/n8ventures/github-readme-stats"
+						target="_blank"
+					>
+						<section>
+							<div class="section_title">github-readme-stats</div>
+							<div class="about_section">
+								<span style="display: block"
+									><img
+										src="https://github.githubassets.com/images/icons/emoji/unicode/26a1.png?v8"
+										class="emoji"
+									/>
+									Dynamically generated stats for your github readmes</span
+								>
+							</div>
+							<div class="bottom_section">
+								<span style="display: inline-block"
+									><i class="fas fa-code"></i>&nbsp; JavaScript</span
+								>
+								<span><i class="fas fa-star"></i>&nbsp; 0</span>
+								<span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+							</div>
+						</section>
+					</a>
+					<a href="https://github.com/n8ventures/KawaiiLogos" target="_blank">
+						<section>
+							<div class="section_title">KawaiiLogos</div>
+							<div class="about_section">
+								<span style="display: none">undefined</span>
+							</div>
+							<div class="bottom_section">
+								<span style="display: none"
+									><i class="fas fa-code"></i>&nbsp; null</span
+								>
+								<span><i class="fas fa-star"></i>&nbsp; 0</span>
+								<span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+							</div>
+						</section>
+					</a>
+					<a href="https://github.com/n8ventures/lol-ranks-bot" target="_blank">
+						<section>
+							<div class="section_title">lol-ranks-bot</div>
+							<div class="about_section">
+								<span style="display: block"
+									>A Discord bot to assign roles based on League of Legends
+									Rank</span
+								>
+							</div>
+							<div class="bottom_section">
+								<span style="display: inline-block"
+									><i class="fas fa-code"></i>&nbsp; JavaScript</span
+								>
+								<span><i class="fas fa-star"></i>&nbsp; 0</span>
+								<span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+							</div>
+						</section>
+					</a>
+					<a
+						href="https://github.com/n8ventures/obs-move-transition"
+						target="_blank"
+					>
+						<section>
+							<div class="section_title">obs-move-transition</div>
+							<div class="about_section">
+								<span style="display: block"
+									>Move transition for OBS Studio</span
+								>
+							</div>
+							<div class="bottom_section">
+								<span style="display: inline-block"
+									><i class="fas fa-code"></i>&nbsp; C</span
+								>
+								<span><i class="fas fa-star"></i>&nbsp; 0</span>
+								<span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+							</div>
+						</section>
+					</a>
+					<a href="https://github.com/n8ventures/Roe2" target="_blank">
+						<section>
+							<div class="section_title">Roe2</div>
+							<div class="about_section">
+								<span style="display: block"
+									>Remote Overlay Environment, an overlay tool made for
+									tournaments hosted on acadarena platform</span
+								>
+							</div>
+							<div class="bottom_section">
+								<span style="display: inline-block"
+									><i class="fas fa-code"></i>&nbsp; TypeScript</span
+								>
+								<span><i class="fas fa-star"></i>&nbsp; 0</span>
+								<span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+							</div>
+						</section>
+					</a>
+					<a href="https://github.com/n8ventures/ServiceLogos" target="_blank">
+						<section>
+							<div class="section_title">ServiceLogos</div>
+							<div class="about_section">
+								<span style="display: block"
+									>ロゴを可愛く作ろう　節度を持って利用してくださいね🫠
+								</span>
+							</div>
+							<div class="bottom_section">
+								<span style="display: none"
+									><i class="fas fa-code"></i>&nbsp; null</span
+								>
+								<span><i class="fas fa-star"></i>&nbsp; 0</span>
+								<span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+							</div>
+						</section>
+					</a>
+					<a
+						href="https://github.com/n8ventures/wii-shop-extension"
+						target="_blank"
+					>
+						<section>
+							<div class="section_title">wii-shop-extension</div>
+							<div class="about_section">
+								<span style="display: block"
+									>Browser extension that plays the Wii Shop theme when you
+									visit shopping websites.</span
+								>
+							</div>
+							<div class="bottom_section">
+								<span style="display: inline-block"
+									><i class="fas fa-code"></i>&nbsp; JavaScript</span
+								>
+								<span><i class="fas fa-star"></i>&nbsp; 0</span>
+								<span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+							</div>
+						</section>
+					</a>
+					<a href="https://github.com/n8ventures/ZoeDepth" target="_blank">
+						<section>
+							<div class="section_title">ZoeDepth</div>
+							<div class="about_section">
+								<span style="display: block"
+									>Metric depth estimation from a single image</span
+								>
+							</div>
+							<div class="bottom_section">
+								<span style="display: inline-block"
+									><i class="fas fa-code"></i>&nbsp; Jupyter Notebook</span
+								>
+								<span><i class="fas fa-star"></i>&nbsp; 0</span>
+								<span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+							</div>
+						</section>
+					</a>
+				</div>
+			</div>
+			<div id="blog_section">
+				<h1>Blog.</h1>
+				<div id="blogs"></div>
+			</div>
+			<div id="footer">
+				<a href="https://github.com/imfunniee" target="_blank"
+					>made on earth by a human</a
+				>
+			</div>
+		</div>
+		<script type="text/javascript">
+			setTimeout(function () {
+				document.getElementById("loading").classList.add("animated")
+				document.getElementById("loading").classList.add("fadeOut")
+				setTimeout(function () {
+					document.getElementById("loading").classList.remove("animated")
+					document.getElementById("loading").classList.remove("fadeOut")
+					document.getElementById("loading").style.display = "none"
+				}, 800)
+			}, 1500)
+			$.getJSON("blog.json", function (blog) {
+				blog = blog || []
+				if (blog.length == 0) {
+					return (document.getElementById("blog_section").style.display =
+						"none")
+				}
+				for (var i = 0; i < blog.length; i++) {
+					$("#blogs").append(`
             <a href="./blog/${blog[i].url_title}/" target="_blank">
                 <section>
                     <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
@@ -200,38 +476,38 @@
                     </div>
                 </section>
             </a>
-            `);
-      }
-    }).fail(function() {
-      return (document.getElementById("blog_section").style.display = "none");
-    });
-  </script>
+            `)
+				}
+			}).fail(function () {
+				return (document.getElementById("blog_section").style.display = "none")
+			})
+		</script>
 
-  <script>
-    const magicProjectsGrid = new MagicGrid({
-      container: "#work_section",
-      animate: false,
-      gutter: 30, // default gutter size
-      static: true,
-      useMin: false,
-      maxColumns: 2,
-      useTransform: true
-    });
-    const magicForksGrid = new MagicGrid({
-      container: "#forks_section",
-      animate: false,
-      gutter: 30, // default gutter size
-      static: true,
-      useMin: false,
-      maxColumns: 2,
-      useTransform: true
-    });
-    $("document").ready(() => {
-      magicProjectsGrid.listen();
-      magicForksGrid.listen();
-    });
-  </script>
+		<script>
+			const magicProjectsGrid = new MagicGrid({
+				container: "#work_section",
+				animate: false,
+				gutter: 30, // default gutter size
+				static: true,
+				useMin: false,
+				maxColumns: 2,
+				useTransform: true,
+			})
 
-</body>
+			const magicForksGrid = new MagicGrid({
+				container: "#forks_section",
+				animate: false,
+				gutter: 30, // default gutter size
+				static: true,
+				useMin: false,
+				maxColumns: 2,
+				useTransform: true,
+			})
 
+			$("document").ready(() => {
+				magicProjectsGrid.listen()
+				magicForksGrid.listen()
+			})
+		</script>
+	</body>
 </html>
