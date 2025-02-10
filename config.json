@@ -1,14 +1,13 @@
 [
- {
-  "username": "n8ventures",
-  "name": "John Nathaniel Calvara",
-  "userimg": "https://avatars.githubusercontent.com/u/25238367?v=4",
-  "sort": "updated",
-  "order": "asc",
-  "includeFork": true,
-  "theme": "dark.css",
-  "types": [
-   "all"
-  ]
- }
+	{
+		"username": "n8ventures",
+		"name": "John Nathaniel Calvara",
+		"userimg": "https://avatars.githubusercontent.com/u/25238367?v=4",
+		"sort": "star",
+		"order": "desc",
+		"includeFork": true,
+		"theme": "dark.css",
+		"types": ["all"],
+		"linkedin": "n8ventures"
+	}
 ]
